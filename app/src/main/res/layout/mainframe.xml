@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/dateofBirthCardId"
+                    android:layout_width="match_parent"
+                    android:layout_height="146sp"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="68sp"
+                    app:cardElevation="6sp">
+
+                    <RelativeLayout
+                        android:id="@+id/bithdayRelativeAreaId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20sp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="92sp"
+                                android:layout_height="92sp"
+                                app:cardBackgroundColor="@color/colorAccent"
+                                app:cardCornerRadius="45sp"
+                                app:cardElevation="4sp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/babybron" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="62sp"
+                                android:layout_marginLeft="-12sp"
+                                android:layout_marginTop="18sp"
+                                app:cardBackgroundColor="@color/colorAccent"
+                                app:cardCornerRadius="31sp"
+                                app:cardElevation="4dp">
+
+                                <TextView
+                                    android:id="@+id/dateofBirthedittextId"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8sp"
+                                    android:layout_marginRight="8sp"
+                                    android:background="@color/colorAccent"
+                                    android:gravity="center"
+                                    android:hint="@string/date_of_birth"
+                                    android:lines="1"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/myCurrentAgeCardId"
+                    android:layout_width="match_parent"
+                    android:layout_height="146sp"
+                    android:layout_below="@id/dateofBirthCardId"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-15sp"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="68sp"
+                    app:cardElevation="4sp">
+
+                    <RelativeLayout
+                        android:id="@+id/currentDateRelativeAreaId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20sp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="92sp"
+                                android:layout_height="92sp"
+                                app:cardBackgroundColor="@color/colorAccent"
+                                app:cardCornerRadius="45sp"
+                                app:cardElevation="4sp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:src="@drawable/currentage" />
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="62sp"
+                                android:layout_marginLeft="-12sp"
+                                android:layout_marginTop="18sp"
+                                app:cardBackgroundColor="@color/colorAccent"
+                                app:cardCornerRadius="31sp"
+                                app:cardElevation="4dp">
+
+                                <TextView
+                                    android:id="@+id/myCurrentAgeEditTextId"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8sp"
+                                    android:layout_marginRight="8sp"
+                                    android:background="@color/colorAccent"
+                                    android:gravity="center"
+                                    android:hint="@string/current_date"
+                                    android:lines="1"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/myCalculateBtnCardId"
+                    android:layout_width="match_parent"
+                    android:layout_height="72sp"
+                    android:layout_below="@+id/myCurrentAgeCardId"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="35sp"
+                    android:layout_marginTop="-15sp"
+                    android:layout_marginRight="35sp"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="35sp"
+                    app:cardElevation="2sp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40sp"
+                            android:layout_alignLeft="@+id/calculateid"
+                            android:layout_marginLeft="-41dp"
+                            android:layout_marginTop="16sp"
+                            android:src="@drawable/agecalculator" />
+
+                        <TextView
+                            android:id="@+id/calculateid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/calculate_age"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>
